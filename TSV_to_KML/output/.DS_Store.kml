@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>.DS_Store.kml</name>
+	<Style id="dsgnmps-new">     
+		<BalloonStyle>       
+			<text>
+				<![CDATA[         
+				<h2>$[dsgnmps/number] - $[dsgnmps/name]</h2>
+
+				<b>$[dsgnmps/street/displayName]</b><br />
+				$[dsgnmps/street]<br />
+				<b>$[dsgnmps/region/displayName]</b><br />
+				$[dsgnmps/region]<br />
+				<b>$[dsgnmps/description/displayName]</b><br />
+				$[dsgnmps/description]<br />
+				<b>$[dsgnmps/date/displayName]</b><br />
+				$[dsgnmps/date]<br />
+				]]>
+			</text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ffcc5114</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>ffcc5114</color>
+		</PolyStyle>
+	</Style>
+	<Style id="dsgnmps-modern">
+		<BalloonStyle>
+			<text>
+				<![CDATA[
+				<h2>$[dsgnmps/number] - $[dsgnmps/name]</h2>
+
+				<b>$[dsgnmps/street/displayName]</b><br />
+				$[dsgnmps/street]<br />
+				<b>$[dsgnmps/region/displayName]</b><br />
+				$[dsgnmps/region]<br />
+				<b>$[dsgnmps/description/displayName]</b><br />
+				$[dsgnmps/description]<br />
+				<b>$[dsgnmps/date/displayName]</b><br />
+				$[dsgnmps/date]<br />
+				]]>
+			</text>     
+		</BalloonStyle>
+		<LineStyle>
+			<color>ffffd94c</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>ffffd94c</color>
+		</PolyStyle>
+	</Style>
+	<Style id="dsgnmps-historic">     
+		<BalloonStyle>       
+			<text>
+				<![CDATA[         
+				<h2>$[dsgnmps/number] - $[dsgnmps/name]</h2>
+
+				<b>$[dsgnmps/street/displayName]</b><br />
+				$[dsgnmps/street]<br />
+				<b>$[dsgnmps/region/displayName]</b><br />
+				$[dsgnmps/region]<br />
+				<b>$[dsgnmps/description/displayName]</b><br />
+				$[dsgnmps/description]<br />
+				<b>$[dsgnmps/date/displayName]</b><br />
+				$[dsgnmps/date]<br />
+				]]>
+			</text>     
+		</BalloonStyle>
+		<LineStyle>
+			<color>fffffaab</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>fffffaab</color>
+		</PolyStyle>
+	</Style>
+	<Style id="dsgnmps-restaurant">     
+		<BalloonStyle>       
+			<text>
+				<![CDATA[         
+				<h2>$[dsgnmps/number] - $[dsgnmps/name]</h2>
+
+				<b>$[dsgnmps/street/displayName]</b><br />
+				$[dsgnmps/street]<br />
+				<b>$[dsgnmps/region/displayName]</b><br />
+				$[dsgnmps/region]<br />
+				<b>$[dsgnmps/description/displayName]</b><br />
+				$[dsgnmps/description]<br />
+				<b>$[dsgnmps/date/displayName]</b><br />
+				$[dsgnmps/date]<br />
+				]]>
+			</text>     
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff374a00</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>ff374a00</color>
+		</PolyStyle>
+	</Style>
+	<Style id="dsgnmps-imbibe">     
+		<BalloonStyle>       
+			<text>
+				<![CDATA[         
+				<h2>$[dsgnmps/number] - $[dsgnmps/name]</h2>
+
+				<b>$[dsgnmps/street/displayName]</b><br />
+				$[dsgnmps/street]<br />
+				<b>$[dsgnmps/region/displayName]</b><br />
+				$[dsgnmps/region]<br />
+				<b>$[dsgnmps/description/displayName]</b><br />
+				$[dsgnmps/description]<br />
+				<b>$[dsgnmps/date/displayName]</b><br />
+				$[dsgnmps/date]<br />
+				]]>
+			</text>     
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff2cb87d</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>ff2cb87d</color>
+		</PolyStyle>
+	</Style>
+	<Style id="dsgnmps-shop">     
+		<BalloonStyle>       
+			<text>
+				<![CDATA[         
+				<h2>$[dsgnmps/number] - $[dsgnmps/name]</h2>
+
+				<b>$[dsgnmps/street/displayName]</b><br />
+				$[dsgnmps/street]<br />
+				<b>$[dsgnmps/region/displayName]</b><br />
+				$[dsgnmps/region]<br />
+				<b>$[dsgnmps/description/displayName]</b><br />
+				$[dsgnmps/description]<br />
+				<b>$[dsgnmps/date/displayName]</b><br />
+				$[dsgnmps/date]<br />
+				]]>
+			</text>     
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff21f4d9</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>ff21f4d9</color>
+		</PolyStyle>
+	</Style>
+	<Schema name="dsgnmps" id="dsgnmpsSchema">
+		<SimpleField name="number" type="string">
+			<displayName>Map Element Number</displayName>
+		</SimpleField>
+		<SimpleField name="name" type="string">
+			<displayName>Element Name</displayName>
+		</SimpleField>
+		<SimpleField name="street" type="string">
+			<displayName>Street Address</displayName>
+		</SimpleField>
+		<SimpleField name="region" type="string">
+			<displayName>Region</displayName>
+		</SimpleField>
+		<SimpleField name="description" type="string">
+			<displayName>Description</displayName>
+		</SimpleField>
+		<SimpleField name="date" type="string">
+			<displayName>Date</displayName>
+		</SimpleField>
+	</Schema>
+	<Folder>
+		<name>.DS_Store outlines</name>
+	</Folder>
+</Document>
+</kml>

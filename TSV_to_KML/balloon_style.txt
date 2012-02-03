@@ -1,0 +1,144 @@
+	<Style id="dsgnmps-new">     
+		<BalloonStyle>       
+			<text>
+				<![CDATA[         
+				<h2>$[dsgnmps/number] - $[dsgnmps/name]</h2>
+
+				<b>$[dsgnmps/street/displayName]</b><br />
+				$[dsgnmps/street]<br />
+				<b>$[dsgnmps/region/displayName]</b><br />
+				$[dsgnmps/region]<br />
+				<b>$[dsgnmps/description/displayName]</b><br />
+				$[dsgnmps/description]<br />
+				<b>$[dsgnmps/date/displayName]</b><br />
+				$[dsgnmps/date]<br />
+				]]>
+			</text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ffcc5114</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>ffcc5114</color>
+		</PolyStyle>
+	</Style>
+	<Style id="dsgnmps-modern">
+		<BalloonStyle>
+			<text>
+				<![CDATA[
+				<h2>$[dsgnmps/number] - $[dsgnmps/name]</h2>
+
+				<b>$[dsgnmps/street/displayName]</b><br />
+				$[dsgnmps/street]<br />
+				<b>$[dsgnmps/region/displayName]</b><br />
+				$[dsgnmps/region]<br />
+				<b>$[dsgnmps/description/displayName]</b><br />
+				$[dsgnmps/description]<br />
+				<b>$[dsgnmps/date/displayName]</b><br />
+				$[dsgnmps/date]<br />
+				]]>
+			</text>     
+		</BalloonStyle>
+		<LineStyle>
+			<color>ffffd94c</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>ffffd94c</color>
+		</PolyStyle>
+	</Style>
+	<Style id="dsgnmps-historic">     
+		<BalloonStyle>       
+			<text>
+				<![CDATA[         
+				<h2>$[dsgnmps/number] - $[dsgnmps/name]</h2>
+
+				<b>$[dsgnmps/street/displayName]</b><br />
+				$[dsgnmps/street]<br />
+				<b>$[dsgnmps/region/displayName]</b><br />
+				$[dsgnmps/region]<br />
+				<b>$[dsgnmps/description/displayName]</b><br />
+				$[dsgnmps/description]<br />
+				<b>$[dsgnmps/date/displayName]</b><br />
+				$[dsgnmps/date]<br />
+				]]>
+			</text>     
+		</BalloonStyle>
+		<LineStyle>
+			<color>fffffaab</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>fffffaab</color>
+		</PolyStyle>
+	</Style>
+	<Style id="dsgnmps-restaurant">     
+		<BalloonStyle>       
+			<text>
+				<![CDATA[         
+				<h2>$[dsgnmps/number] - $[dsgnmps/name]</h2>
+
+				<b>$[dsgnmps/street/displayName]</b><br />
+				$[dsgnmps/street]<br />
+				<b>$[dsgnmps/region/displayName]</b><br />
+				$[dsgnmps/region]<br />
+				<b>$[dsgnmps/description/displayName]</b><br />
+				$[dsgnmps/description]<br />
+				<b>$[dsgnmps/date/displayName]</b><br />
+				$[dsgnmps/date]<br />
+				]]>
+			</text>     
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff374a00</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>ff374a00</color>
+		</PolyStyle>
+	</Style>
+	<Style id="dsgnmps-imbibe">     
+		<BalloonStyle>       
+			<text>
+				<![CDATA[         
+				<h2>$[dsgnmps/number] - $[dsgnmps/name]</h2>
+
+				<b>$[dsgnmps/street/displayName]</b><br />
+				$[dsgnmps/street]<br />
+				<b>$[dsgnmps/region/displayName]</b><br />
+				$[dsgnmps/region]<br />
+				<b>$[dsgnmps/description/displayName]</b><br />
+				$[dsgnmps/description]<br />
+				<b>$[dsgnmps/date/displayName]</b><br />
+				$[dsgnmps/date]<br />
+				]]>
+			</text>     
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff2cb87d</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>ff2cb87d</color>
+		</PolyStyle>
+	</Style>
+	<Style id="dsgnmps-shop">     
+		<BalloonStyle>       
+			<text>
+				<![CDATA[         
+				<h2>$[dsgnmps/number] - $[dsgnmps/name]</h2>
+
+				<b>$[dsgnmps/street/displayName]</b><br />
+				$[dsgnmps/street]<br />
+				<b>$[dsgnmps/region/displayName]</b><br />
+				$[dsgnmps/region]<br />
+				<b>$[dsgnmps/description/displayName]</b><br />
+				$[dsgnmps/description]<br />
+				<b>$[dsgnmps/date/displayName]</b><br />
+				$[dsgnmps/date]<br />
+				]]>
+			</text>     
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff21f4d9</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>ff21f4d9</color>
+		</PolyStyle>
+	</Style>

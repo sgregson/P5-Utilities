@@ -1,0 +1,893 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>new boston.csv.kml</name>
+	<Style id="dsgnmps-new">     
+		<BalloonStyle>       
+			<text>
+				<![CDATA[         
+				<h2>$[dsgnmps/number] - $[dsgnmps/name]</h2>
+
+				<b>$[dsgnmps/street/displayName]</b><br />
+				$[dsgnmps/street]<br />
+				<b>$[dsgnmps/region/displayName]</b><br />
+				$[dsgnmps/region]<br />
+				<b>$[dsgnmps/description/displayName]</b><br />
+				$[dsgnmps/description]<br />
+				<b>$[dsgnmps/date/displayName]</b><br />
+				$[dsgnmps/date]<br />
+				]]>
+			</text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ffcc5114</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>ffcc5114</color>
+		</PolyStyle>
+	</Style>
+	<Style id="dsgnmps-modern">
+		<BalloonStyle>
+			<text>
+				<![CDATA[
+				<h2>$[dsgnmps/number] - $[dsgnmps/name]</h2>
+
+				<b>$[dsgnmps/street/displayName]</b><br />
+				$[dsgnmps/street]<br />
+				<b>$[dsgnmps/region/displayName]</b><br />
+				$[dsgnmps/region]<br />
+				<b>$[dsgnmps/description/displayName]</b><br />
+				$[dsgnmps/description]<br />
+				<b>$[dsgnmps/date/displayName]</b><br />
+				$[dsgnmps/date]<br />
+				]]>
+			</text>     
+		</BalloonStyle>
+		<LineStyle>
+			<color>ffffd94c</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>ffffd94c</color>
+		</PolyStyle>
+	</Style>
+	<Style id="dsgnmps-historic">     
+		<BalloonStyle>       
+			<text>
+				<![CDATA[         
+				<h2>$[dsgnmps/number] - $[dsgnmps/name]</h2>
+
+				<b>$[dsgnmps/street/displayName]</b><br />
+				$[dsgnmps/street]<br />
+				<b>$[dsgnmps/region/displayName]</b><br />
+				$[dsgnmps/region]<br />
+				<b>$[dsgnmps/description/displayName]</b><br />
+				$[dsgnmps/description]<br />
+				<b>$[dsgnmps/date/displayName]</b><br />
+				$[dsgnmps/date]<br />
+				]]>
+			</text>     
+		</BalloonStyle>
+		<LineStyle>
+			<color>fffffaab</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>fffffaab</color>
+		</PolyStyle>
+	</Style>
+	<Style id="dsgnmps-restaurant">     
+		<BalloonStyle>       
+			<text>
+				<![CDATA[         
+				<h2>$[dsgnmps/number] - $[dsgnmps/name]</h2>
+
+				<b>$[dsgnmps/street/displayName]</b><br />
+				$[dsgnmps/street]<br />
+				<b>$[dsgnmps/region/displayName]</b><br />
+				$[dsgnmps/region]<br />
+				<b>$[dsgnmps/description/displayName]</b><br />
+				$[dsgnmps/description]<br />
+				<b>$[dsgnmps/date/displayName]</b><br />
+				$[dsgnmps/date]<br />
+				]]>
+			</text>     
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff374a00</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>ff374a00</color>
+		</PolyStyle>
+	</Style>
+	<Style id="dsgnmps-imbibe">     
+		<BalloonStyle>       
+			<text>
+				<![CDATA[         
+				<h2>$[dsgnmps/number] - $[dsgnmps/name]</h2>
+
+				<b>$[dsgnmps/street/displayName]</b><br />
+				$[dsgnmps/street]<br />
+				<b>$[dsgnmps/region/displayName]</b><br />
+				$[dsgnmps/region]<br />
+				<b>$[dsgnmps/description/displayName]</b><br />
+				$[dsgnmps/description]<br />
+				<b>$[dsgnmps/date/displayName]</b><br />
+				$[dsgnmps/date]<br />
+				]]>
+			</text>     
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff2cb87d</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>ff2cb87d</color>
+		</PolyStyle>
+	</Style>
+	<Style id="dsgnmps-shop">     
+		<BalloonStyle>       
+			<text>
+				<![CDATA[         
+				<h2>$[dsgnmps/number] - $[dsgnmps/name]</h2>
+
+				<b>$[dsgnmps/street/displayName]</b><br />
+				$[dsgnmps/street]<br />
+				<b>$[dsgnmps/region/displayName]</b><br />
+				$[dsgnmps/region]<br />
+				<b>$[dsgnmps/description/displayName]</b><br />
+				$[dsgnmps/description]<br />
+				<b>$[dsgnmps/date/displayName]</b><br />
+				$[dsgnmps/date]<br />
+				]]>
+			</text>     
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff21f4d9</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>ff21f4d9</color>
+		</PolyStyle>
+	</Style>
+	<Schema name="dsgnmps" id="dsgnmpsSchema">
+		<SimpleField name="number" type="string">
+			<displayName>Map Element Number</displayName>
+		</SimpleField>
+		<SimpleField name="name" type="string">
+			<displayName>Element Name</displayName>
+		</SimpleField>
+		<SimpleField name="street" type="string">
+			<displayName>Street Address</displayName>
+		</SimpleField>
+		<SimpleField name="region" type="string">
+			<displayName>Region</displayName>
+		</SimpleField>
+		<SimpleField name="description" type="string">
+			<displayName>Description</displayName>
+		</SimpleField>
+		<SimpleField name="date" type="string">
+			<displayName>Date</displayName>
+		</SimpleField>
+	</Schema>
+	<Folder>
+		<name>new boston.csv outlines</name>
+		<Placemark>
+			<name>360 Newbury Street</name>
+			<styleUrl>#dsgnmps-new</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#dsgnmpsSchema">
+					<SimpleData name="number">1</SimpleData>
+					<SimpleData name="name">360 Newbury Street</SimpleData>
+					<SimpleData name="street">360 Newbury St</SimpleData>
+					<SimpleData name="region">Back Bay</SimpleData>
+					<SimpleData name="description">Frank O. Gehry with Schwartz / Silver Architects</SimpleData>
+					<SimpleData name="date">1989</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-71.08816665616381,42.34806503587846,0 -71.08802079535693,42.34780597268595,0 -71.08751815417851,42.34779011258249,0 -71.08771232800474,42.34818773331149,0 -71.08816665616381,42.34806503587846,0
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>557/559 East Second Street</name>
+			<styleUrl>#dsgnmps-new</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#dsgnmpsSchema">
+					<SimpleData name="number">2</SimpleData>
+					<SimpleData name="name">557/559 East Second Street</SimpleData>
+					<SimpleData name="street">557/559 East Second St</SimpleData>
+					<SimpleData name="region">South Boston</SimpleData>
+					<SimpleData name="description">Utile</SimpleData>
+					<SimpleData name="date">2005-2006</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-71.04099185554642,42.33715384196017,0 -71.04099314422669,42.33694601351228,0 -71.04066869304349,42.33694801544098,0 -71.04066834310781,42.33716123048078,0 -71.04079449123807,42.33715961457108,0 -71.04079314577184,42.33694744659043,0 -71.04087211190617,42.33694620944598,0 -71.04087073715873,42.33715543765994,0 -71.04099185554642,42.33715384196017,0
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Apple Store</name>
+			<styleUrl>#dsgnmps-new</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#dsgnmpsSchema">
+					<SimpleData name="number">3</SimpleData>
+					<SimpleData name="name">Apple Store</SimpleData>
+					<SimpleData name="street">815 Boylston St</SimpleData>
+					<SimpleData name="region">Back Bay</SimpleData>
+					<SimpleData name="description">Bohlin Cywinski Jackson</SimpleData>
+					<SimpleData name="date">2008</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-71.08252927870986,42.34887499566194,0 -71.08234638157674,42.34892137042591,0 -71.08247286034859,42.34917944747436,0 -71.08265551243025,42.34913105909587,0 -71.08252927870986,42.34887499566194,0
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Atelier 505</name>
+			<styleUrl>#dsgnmps-new</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#dsgnmpsSchema">
+					<SimpleData name="number">4</SimpleData>
+					<SimpleData name="name">Atelier 505</SimpleData>
+					<SimpleData name="street">505 Tremont St</SimpleData>
+					<SimpleData name="region">South End</SimpleData>
+					<SimpleData name="description">Machado and Silvetti Associates</SimpleData>
+					<SimpleData name="date">2004</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-71.07132686791449,42.34504492339529,0 -71.07102155420228,42.3444593593943,0 -71.07096644588603,42.34446283129362,0 -71.07091695872491,42.34449045460565,0 -71.07093938318499,42.34451598956736,0 -71.07090577995339,42.34455188871715,0 -71.0708581488298,42.34455811627289,0 -71.07082454737566,42.34459194049646,0 -71.07077318424783,42.34460299855981,0 -71.07073770625441,42.34463338146701,0 -71.07069194618717,42.34464721476881,0 -71.07072745398571,42.34468170138931,0 -71.07073027012071,42.34471207035826,0 -71.07075830673986,42.3447403620059,0 -71.07076206881723,42.34478937514231,0 -71.0704885320942,42.34486052191394,0 -71.07057039391439,42.34502733014941,0 -71.07029780225352,42.34510254186569,0 -71.07025541501893,42.34511588967076,0 -71.07036128504203,42.34532941851405,0 -71.07070107755182,42.34523929674179,0 -71.07069011653418,42.34521479978409,0 -71.07132686791449,42.34504492339529,0
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Boston Harbor Islands Pavilion</name>
+			<styleUrl>#dsgnmps-new</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#dsgnmpsSchema">
+					<SimpleData name="number">5</SimpleData>
+					<SimpleData name="name">Boston Harbor Islands Pavilion</SimpleData>
+					<SimpleData name="street">Rose Kennedy Greenway</SimpleData>
+					<SimpleData name="region">Greenway</SimpleData>
+					<SimpleData name="description">Utile</SimpleData>
+					<SimpleData name="date">2011</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-71.05221591505304,42.3602197589928,0 -71.05243480251562,42.36016588092942,0 -71.05231523815044,42.35995558146741,0 -71.05220642861363,42.3599791504875,0 -71.05226084202897,42.3598931923361,0 -71.05207504692117,42.35982933253841,0 -71.05201644146557,42.35993344939316,0 -71.05216139424981,42.35999026465807,0 -71.05210501539982,42.36000563454238,0 -71.05221591505304,42.3602197589928,0
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>BSA Space</name>
+			<styleUrl>#dsgnmps-new</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#dsgnmpsSchema">
+					<SimpleData name="number">6</SimpleData>
+					<SimpleData name="name">BSA Space</SimpleData>
+					<SimpleData name="street">286 Congress St</SimpleData>
+					<SimpleData name="region">Downtown</SimpleData>
+					<SimpleData name="description">Höweler + Yoon Architecture</SimpleData>
+					<SimpleData name="date">2011</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-71.05238933701676,42.35275198631752,0 -71.05197508609093,42.35311223238008,0 -71.05250909691102,42.35365863325754,0 -71.05303790872482,42.3533788530501,0 -71.05238933701676,42.35275198631752,0
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Cambridge Public Library</name>
+			<styleUrl>#dsgnmps-new</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#dsgnmpsSchema">
+					<SimpleData name="number">7</SimpleData>
+					<SimpleData name="name">Cambridge Public Library</SimpleData>
+					<SimpleData name="street">449 Broadway</SimpleData>
+					<SimpleData name="region">Mid-Cambridge</SimpleData>
+					<SimpleData name="description">Van Brunt and Howe, William Rawn Associates, Ann Beha Architects</SimpleData>
+					<SimpleData name="date">1888, 2010</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-71.11074782606219,42.37434677948153,0 -71.11087906498454,42.37415425064107,0 -71.11100806506579,42.37420277352297,0 -71.11109448798304,42.37407349272929,0 -71.11096552560919,42.37402113307018,0 -71.11094976131477,42.37402308340007,0 -71.11093925570752,42.37402600164203,0 -71.11093006652203,42.37402989020735,0 -71.11070259601789,42.37393773995952,0 -71.1106789393569,42.37394066126121,0 -71.1106631671812,42.37394357705578,0 -71.11064477635487,42.37395426449713,0 -71.11063558175034,42.3739649579635,0 -71.11063164936589,42.37397759047144,0 -71.11052501077282,42.37393663846666,0 -71.1105684179324,42.37387646276503,0 -71.10998394578397,42.37364449052129,0 -71.10993779345971,42.37370293763438,0 -71.10994283786701,42.37378853136295,0 -71.10995865049277,42.37379338441489,0 -71.10994269972858,42.37384012530804,0 -71.10993077868963,42.37383621781007,0 -71.1099057699841,42.37393471701529,0 -71.11039909896094,42.37412828333942,0 -71.11046450870991,42.37403006510381,0 -71.11061072520378,42.37409028321697,0 -71.11059103091833,42.37411457708991,0 -71.11056209622598,42.37410390806134,0 -71.11051613939118,42.37417096901546,0 -71.11063322521082,42.37422045466459,0 -71.11066210645056,42.37417671582965,0 -71.11069763188151,42.37419030260858,0 -71.11062411455946,42.37429921239448,0 -71.11064122588404,42.37430795605797,0 -71.11063466135408,42.37431768881531,0 -71.11063730688723,42.37432936345611,0 -71.11064258288422,42.37433909374981,0 -71.11065180602186,42.37434978788298,0 -71.11066759351161,42.37435268260646,0 -71.11068206203106,42.37435266536468,0 -71.11069521074837,42.37434973223041,0 -71.11070835290143,42.37434290921935,0 -71.11071623388612,42.37433609276019,0 -71.11074782606219,42.37434677948153,0
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Community Rowing Boathouse</name>
+			<styleUrl>#dsgnmps-new</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#dsgnmpsSchema">
+					<SimpleData name="number">8</SimpleData>
+					<SimpleData name="name">Community Rowing Boathouse</SimpleData>
+					<SimpleData name="street">20 Nonantum Road</SimpleData>
+					<SimpleData name="region">Brighton</SimpleData>
+					<SimpleData name="description">Anmahian Winton Architects</SimpleData>
+					<SimpleData name="date">2008</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-71.16581550932297,42.3586397486833,0 -71.16560231540828,42.35851500770448,0 -71.16556724573735,42.35855205470187,0 -71.16562374425781,42.35859272868016,0 -71.16560997448389,42.35860848634319,0 -71.16546066288763,42.35849476987084,0 -71.16534347745488,42.35857916000131,0 -71.16586546374312,42.35896401172226,0 -71.16605603511702,42.35882066694211,0 -71.16581550932297,42.3586397486833,0
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Fogg Museum</name>
+			<styleUrl>#dsgnmps-new</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#dsgnmpsSchema">
+					<SimpleData name="number">9</SimpleData>
+					<SimpleData name="name">Fogg Museum</SimpleData>
+					<SimpleData name="street">32 Quincy St</SimpleData>
+					<SimpleData name="region">Harvard</SimpleData>
+					<SimpleData name="description">Coolidge, Shepley, Bulfinch, and Abbott, Renzo Piano</SimpleData>
+					<SimpleData name="date">1925, 2012</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-71.11437241997417,42.3745047919393,0 -71.11452568676653,42.37387394716897,0 -71.11431248045524,42.373840202191,0 -71.11428087677251,42.37398032194871,0 -71.11403205040715,42.37394460963593,0 -71.11394589139611,42.37428783783866,0 -71.114187276322,42.37432564758706,0 -71.11414425006443,42.37446860967276,0 -71.11437241997417,42.3745047919393,0
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>FP3</name>
+			<styleUrl>#dsgnmps-new</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#dsgnmpsSchema">
+					<SimpleData name="number">10</SimpleData>
+					<SimpleData name="name">FP3</SimpleData>
+					<SimpleData name="street">346 Congress St</SimpleData>
+					<SimpleData name="region">Seaport District</SimpleData>
+					<SimpleData name="description">Hacin+Associates</SimpleData>
+					<SimpleData name="date">2008</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-71.04832287059516,42.350811752436,0 -71.04867092701585,42.35099408407309,0 -71.04884617279036,42.35076635442533,0 -71.04857533636573,42.35058502893776,0 -71.04832287059516,42.350811752436,0
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Genzyme Center</name>
+			<styleUrl>#dsgnmps-new</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#dsgnmpsSchema">
+					<SimpleData name="number">11</SimpleData>
+					<SimpleData name="name">Genzyme Center</SimpleData>
+					<SimpleData name="street">500 Kendall St</SimpleData>
+					<SimpleData name="region">East Cambridge</SimpleData>
+					<SimpleData name="description">Behnisch, Behnisch and Partner</SimpleData>
+					<SimpleData name="date">2004</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-71.08181463107627,42.36423174533358,0 -71.08192556635171,42.36374726646356,0 -71.08142005202282,42.36363239482101,0 -71.08137003015001,42.36392267140929,0 -71.08124892728033,42.36389842708812,0 -71.08113805109072,42.3641198344643,0 -71.08181463107627,42.36423174533358,0
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Graduate Student Housing</name>
+			<styleUrl>#dsgnmps-new</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#dsgnmpsSchema">
+					<SimpleData name="number">12</SimpleData>
+					<SimpleData name="name">Graduate Student Housing</SimpleData>
+					<SimpleData name="street">1 Western Ave</SimpleData>
+					<SimpleData name="region">Harvard</SimpleData>
+					<SimpleData name="description">Machado and Silvetti Associates</SimpleData>
+					<SimpleData name="date">2003</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-71.11959501924126,42.36499254972106,0 -71.11948024727016,42.36421715710536,0 -71.11878835868562,42.36427364531108,0 -71.1187860581464,42.36439726584653,0 -71.11882235821787,42.36439299936953,0 -71.11881880944685,42.36450022463998,0 -71.11878636971267,42.36450587351155,0 -71.11877370231657,42.36481425608401,0 -71.11881385474699,42.36480992213317,0 -71.11880631510495,42.36485810511686,0 -71.11852844458099,42.36488611101643,0 -71.1185265336963,42.36491178830357,0 -71.11850729311556,42.3649147328196,0 -71.11849577482508,42.36507341556795,0 -71.11903319320685,42.36502558114468,0 -71.11903998763493,42.36487350259299,0 -71.11899579720534,42.36487767884111,0 -71.11900548748477,42.36439441962062,0 -71.11932467030474,42.36436646808883,0 -71.11941852627083,42.3650091659232,0 -71.11959501924126,42.36499254972106,0
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Graduate Student Apartments</name>
+			<styleUrl>#dsgnmps-new</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#dsgnmpsSchema">
+					<SimpleData name="number">13</SimpleData>
+					<SimpleData name="name">Graduate Student Apartments</SimpleData>
+					<SimpleData name="street">10 Akron St</SimpleData>
+					<SimpleData name="region">Harvard</SimpleData>
+					<SimpleData name="description">Kyu Sung Woo</SimpleData>
+					<SimpleData name="date">2008</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-71.11569285059583,42.36572777951825,0 -71.11571821129652,42.36531473621726,0 -71.11553201429727,42.36530910479646,0 -71.11551323508922,42.36555379939534,0 -71.11519904597972,42.36554168743085,0 -71.11525973938234,42.3653299621806,0 -71.11506865263127,42.3653223501313,0 -71.11494999977521,42.36569378458025,0 -71.11569285059583,42.36572777951825,0
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Honan-Allston Branch Library</name>
+			<styleUrl>#dsgnmps-new</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#dsgnmpsSchema">
+					<SimpleData name="number">14</SimpleData>
+					<SimpleData name="name">Honan-Allston Branch Library</SimpleData>
+					<SimpleData name="street">300 North Harvard St</SimpleData>
+					<SimpleData name="region">Allston</SimpleData>
+					<SimpleData name="description">Machado and Silvetti Associates</SimpleData>
+					<SimpleData name="date">2001</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-71.12817775742815,42.36026594364652,0 -71.12826524872051,42.36033050727288,0 -71.12840504987935,42.36023350138218,0 -71.1281550839312,42.36003545685067,0 -71.12820083160902,42.36000575160922,0 -71.12812261996953,42.3599711629468,0 -71.12798772673335,42.35983588016606,0 -71.12793755574761,42.3598046438314,0 -71.12784950048072,42.35986879863864,0 -71.12789179942131,42.35989832169438,0 -71.12779124531052,42.3599657811401,0 -71.12784132831756,42.36000522491153,0 -71.12772723775841,42.36008113544937,0 -71.12770497461898,42.36006301573526,0 -71.12758972929532,42.36013983859768,0 -71.12797620206689,42.36044595631665,0 -71.12808717893269,42.36037028815344,0 -71.12783427093002,42.36016938341396,0 -71.12795062225806,42.36008589672738,0 -71.12807468754161,42.36018243368996,0 -71.12795616411344,42.36026521412722,0 -71.12805692816417,42.36034710778369,0 -71.12817775742815,42.36026594364652,0
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Institute of Contemporary Art</name>
+			<styleUrl>#dsgnmps-new</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#dsgnmpsSchema">
+					<SimpleData name="number">15</SimpleData>
+					<SimpleData name="name">Institute of Contemporary Art</SimpleData>
+					<SimpleData name="street">100 Northern Ave</SimpleData>
+					<SimpleData name="region">Seaport District</SimpleData>
+					<SimpleData name="description">Diller Scofidio + Renfro </SimpleData>
+					<SimpleData name="date">2006</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-71.04328555915941,42.35278301235302,0 -71.04281820900711,42.35258529171767,0 -71.04248866249912,42.35300427202689,0 -71.04291306082452,42.35316613612979,0 -71.04328555915941,42.35278301235302,0
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Isabella Stewart Gardner Museum</name>
+			<styleUrl>#dsgnmps-new</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#dsgnmpsSchema">
+					<SimpleData name="number">16</SimpleData>
+					<SimpleData name="name">Isabella Stewart Gardner Museum</SimpleData>
+					<SimpleData name="street">280 The Fenway</SimpleData>
+					<SimpleData name="region">Fenway</SimpleData>
+					<SimpleData name="description">Willard T. Sears, Renzo Piano</SimpleData>
+					<SimpleData name="date">1902, 2012</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-71.09889034677158,42.3388760821875,0 -71.09941072854924,42.33811648496263,0 -71.09906748547068,42.33798028850763,0 -71.09927444429407,42.337675409067,0 -71.09913543935487,42.33761313275156,0 -71.09881488433476,42.33807628809037,0 -71.0991279922055,42.33820268854328,0 -71.09897733590715,42.33841707222063,0 -71.09885159530296,42.33837144311009,0 -71.09859187501587,42.33876551633483,0 -71.09889034677158,42.3388760821875,0
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Laboratory for Integrated Science and Engineering</name>
+			<styleUrl>#dsgnmps-new</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#dsgnmpsSchema">
+					<SimpleData name="number">17</SimpleData>
+					<SimpleData name="name">Laboratory for Integrated Science and Engineering</SimpleData>
+					<SimpleData name="street">15 Oxford St</SimpleData>
+					<SimpleData name="region">Harvard</SimpleData>
+					<SimpleData name="description">Rafael Moneo</SimpleData>
+					<SimpleData name="date">2006</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-71.11650934689033,42.37765823348823,0 -71.11661300580097,42.37761334659976,0 -71.11680338814959,42.37757504882898,0 -71.11671644593198,42.37734867659371,0 -71.11654557843869,42.37738042334485,0 -71.11635620198787,42.37687582797875,0 -71.11611876568787,42.37692556044736,0 -71.11634714541569,42.37754576343984,0 -71.11645687405901,42.37752333499244,0 -71.11650934689033,42.37765823348823,0
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Lincoln Street Garage</name>
+			<styleUrl>#dsgnmps-new</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#dsgnmpsSchema">
+					<SimpleData name="number">18</SimpleData>
+					<SimpleData name="name">Lincoln Street Garage</SimpleData>
+					<SimpleData name="street">125 Lincoln St</SimpleData>
+					<SimpleData name="region">Greenway</SimpleData>
+					<SimpleData name="description">Archie Riskin, Brian Healy Architects</SimpleData>
+					<SimpleData name="date">1955, 1958, 1997</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-71.05861500573599,42.35100623285278,0 -71.05834349144004,42.35167814164449,0 -71.05854008947082,42.3517178780677,0 -71.05863376663756,42.35164010520798,0 -71.05869953012865,42.35157596507739,0 -71.05876301910601,42.35150478462901,0 -71.05882411419954,42.35143533776939,0 -71.05888030052834,42.3513573902962,0 -71.05893625361701,42.35127102550715,0 -71.05898306709267,42.35118446959245,0 -71.05902994987348,42.35109264496477,0 -71.05861500573599,42.35100623285278,0
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>List Visual Arts Center</name>
+			<styleUrl>#dsgnmps-new</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#dsgnmpsSchema">
+					<SimpleData name="number">19</SimpleData>
+					<SimpleData name="name">List Visual Arts Center</SimpleData>
+					<SimpleData name="street">20 Ames St</SimpleData>
+					<SimpleData name="region">MIT</SimpleData>
+					<SimpleData name="description">I.M. Pei and Partners</SimpleData>
+					<SimpleData name="date">1985</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-71.0881259835537,42.36097477795516,0 -71.08789758850826,42.36059753406485,0 -71.08733521615869,42.3607711298493,0 -71.08757745186452,42.361156693151,0 -71.0881259835537,42.36097477795516,0
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Macallen Building</name>
+			<styleUrl>#dsgnmps-new</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#dsgnmpsSchema">
+					<SimpleData name="number">20</SimpleData>
+					<SimpleData name="name">Macallen Building</SimpleData>
+					<SimpleData name="street">141 Dorchester Ave</SimpleData>
+					<SimpleData name="region">South Boston</SimpleData>
+					<SimpleData name="description">Office dA</SimpleData>
+					<SimpleData name="date">2007</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-71.05841846152725,42.34243108847424,0 -71.05855829139338,42.34211543018399,0 -71.05728449126083,42.34176386579614,0 -71.05729816882355,42.34213636141032,0 -71.05841846152725,42.34243108847424,0
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Media Lab</name>
+			<styleUrl>#dsgnmps-new</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#dsgnmpsSchema">
+					<SimpleData name="number">21</SimpleData>
+					<SimpleData name="name">Media Lab</SimpleData>
+					<SimpleData name="street">25 Carleton St</SimpleData>
+					<SimpleData name="region">MIT</SimpleData>
+					<SimpleData name="description">Fumihiko Maki</SimpleData>
+					<SimpleData name="date">2010</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-71.08767227694105,42.36019878161897,0 -71.08722424420677,42.36035022702314,0 -71.08721537641593,42.36033500646335,0 -71.08699071458922,42.36040899198285,0 -71.08708875915686,42.36057410609141,0 -71.08710777324698,42.3605686692196,0 -71.0872195232498,42.36076359938767,0 -71.08731443680695,42.36073330315286,0 -71.0873366798794,42.36077112941847,0 -71.0878990610141,42.36059753160907,0 -71.08767227694105,42.36019878161897,0
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Multi-Faith Spiritual Center</name>
+			<styleUrl>#dsgnmps-new</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#dsgnmpsSchema">
+					<SimpleData name="number">22</SimpleData>
+					<SimpleData name="name">Multi-Faith Spiritual Center</SimpleData>
+					<SimpleData name="street">Ell Hall 2fl</SimpleData>
+					<SimpleData name="region">Northeastern</SimpleData>
+					<SimpleData name="description">Office dA</SimpleData>
+					<SimpleData name="date">1998</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-71.08818623779132,42.33962820697806,0 -71.08799719063568,42.33936144608576,0 -71.08772798139705,42.33947041064805,0 -71.08791970149956,42.33973915319216,0 -71.08818623779132,42.33962820697806,0
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Museum of Fine Arts, Boston</name>
+			<styleUrl>#dsgnmps-new</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#dsgnmpsSchema">
+					<SimpleData name="number">23</SimpleData>
+					<SimpleData name="name">Museum of Fine Arts, Boston</SimpleData>
+					<SimpleData name="street">465 Huntington Ave</SimpleData>
+					<SimpleData name="region">Fenway</SimpleData>
+					<SimpleData name="description">Guy Lowell, Foster and Associates</SimpleData>
+					<SimpleData name="date">1909, 2010</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-71.09501122779174,42.33979923984271,0 -71.09493298289169,42.33967461122151,0 -71.09484000416766,42.3395953392466,0 -71.09443069678072,42.3397500254583,0 -71.09415810896039,42.33937028362625,0 -71.0945744871737,42.33921477172617,0 -71.09484026333,42.33959418573578,0 -71.09493173120811,42.33967584684513,0 -71.09539672313817,42.33949247355612,0 -71.09499922430714,42.33894072268571,0 -71.09456185285593,42.33910163631286,0 -71.09439367529961,42.33886802227205,0 -71.0946565652728,42.33876674501105,0 -71.09448755538496,42.33853548247649,0 -71.09406021200186,42.33869273513845,0 -71.09422274955459,42.33893413036509,0 -71.09391273453177,42.33905163093622,0 -71.09385839289321,42.33898155829031,0 -71.09367312959662,42.33905246249493,0 -71.09372765898536,42.33913157305233,0 -71.09345657547449,42.33923637444116,0 -71.09328406458776,42.33900076600401,0 -71.09287176474336,42.33917141499137,0 -71.09304102845115,42.33940401061394,0 -71.09330944170368,42.33930090123921,0 -71.09340838084928,42.339439725734,0 -71.09289838441011,42.33964594112595,0 -71.0934144640179,42.34036840150929,0 -71.0936227381908,42.34028563964643,0 -71.0935783943758,42.34021563266687,0 -71.09388264557447,42.34008870642654,0 -71.09396846108639,42.3401981587548,0 -71.09501122779174,42.33979923984271,0
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>New England Holocaust Memorial</name>
+			<styleUrl>#dsgnmps-new</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#dsgnmpsSchema">
+					<SimpleData name="number">24</SimpleData>
+					<SimpleData name="name">New England Holocaust Memorial</SimpleData>
+					<SimpleData name="street">Carmen Park (Faneuil Hall)</SimpleData>
+					<SimpleData name="region">Government Center</SimpleData>
+					<SimpleData name="description">Stanley Saitowitz</SimpleData>
+					<SimpleData name="date">1997</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-71.0572612711773,42.36103876823473,0 -71.05708190055168,42.36107668167836,0 -71.05732892140459,42.36154294045828,0 -71.05744808972698,42.36147920700732,0 -71.0572612711773,42.36103876823473,0
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Ray and Maria Stata Center</name>
+			<styleUrl>#dsgnmps-new</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#dsgnmpsSchema">
+					<SimpleData name="number">25</SimpleData>
+					<SimpleData name="name">Ray and Maria Stata Center</SimpleData>
+					<SimpleData name="street">32 Vassar St</SimpleData>
+					<SimpleData name="region">MIT</SimpleData>
+					<SimpleData name="description">Gehry Partners</SimpleData>
+					<SimpleData name="date">2004</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-71.09131077065592,42.3618787848957,0 -71.09152429538128,42.36176530283412,0 -71.09153889966667,42.36178283516661,0 -71.09155166902072,42.36177068389018,0 -71.09161374847258,42.36179494044084,0 -71.09166113024126,42.36173689032552,0 -71.09162798045141,42.3616815632819,0 -71.09166637262375,42.3616680615696,0 -71.09158866102409,42.36152926522325,0 -71.0914389701653,42.36156841454602,0 -71.09143866170751,42.3615334407705,0 -71.09138381764143,42.36153214901813,0 -71.09139580098429,42.36143549904566,0 -71.09131364763564,42.36142222415525,0 -71.09131350398768,42.36131483274477,0 -71.09089912366913,42.36123979638757,0 -71.0908936459915,42.36119675305308,0 -71.09072644819324,42.36120492146388,0 -71.0906953855222,42.36103960131356,0 -71.09080641063235,42.36099041836464,0 -71.09078277689947,42.36095521950319,0 -71.09062621485407,42.36100721653676,0 -71.09066277678805,42.36116860848442,0 -71.09059917763763,42.36117537640607,0 -71.09059930671881,42.36123593698659,0 -71.09058659676352,42.36123997850108,0 -71.09059393701622,42.36127762488116,0 -71.09056487313978,42.36127764005385,0 -71.09057219382704,42.36130452126578,0 -71.09054681873221,42.36132470201341,0 -71.09051779159648,42.36133144661403,0 -71.09049241393825,42.36134356272812,0 -71.09046522221257,42.36135567413497,0 -71.09044709288494,42.36136508589423,0 -71.09043079323294,42.36137986648544,0 -71.09040724047624,42.36139733304188,0 -71.09039095039243,42.36141881541209,0 -71.09036739444396,42.36143225002828,0 -71.09034744163677,42.36143762617335,0 -71.09031115879691,42.36143764683214,0 -71.09027669221894,42.36143766646067,0 -71.09025130264774,42.36143634150683,0 -71.09022589032838,42.36142830612861,0 -71.09019319393229,42.36141356207321,0 -71.09014777010984,42.36139881617019,0 -71.09011325034858,42.36138272908185,0 -71.09007876916874,42.36136933580369,0 -71.09003704227362,42.36136399527975,0 -71.08997899340488,42.36136000493234,0 -71.08996810628338,42.36136001005423,0 -71.08993907438037,42.36136002241786,0 -71.08987261237559,42.36146474796076,0 -71.08990336256754,42.3614566808611,0 -71.08992872555436,42.36145666540403,0 -71.08995775258695,42.36147005646487,0 -71.08997583123816,42.36149014434861,0 -71.089973945719,42.36150488021755,0 -71.08996116873294,42.36152364458605,0 -71.0899395604139,42.36154109618559,0 -71.08991803499397,42.36154380508538,0 -71.08990178890342,42.36154113804616,0 -71.08988005880269,42.36153310958834,0 -71.08986009510082,42.36151971671646,0 -71.08984381494653,42.36151570762345,0 -71.08981841120544,42.36152241431602,0 -71.08978743177175,42.36153179414389,0 -71.0897782892208,42.36155725696669,0 -71.08977822982567,42.36157735895407,0 -71.08977997343149,42.36159746360065,0 -71.08979634201251,42.36161488048106,0 -71.08981105001095,42.36162828041059,0 -71.08982755921517,42.36163631239512,0 -71.08985133731379,42.36164299811215,0 -71.08987135234011,42.3616523665431,0 -71.08989131731363,42.36165503638521,0 -71.08988419717883,42.36172201311982,0 -71.08986798445621,42.36172602715047,0 -71.08998808062766,42.36193278474907,0 -71.08996435266783,42.36196505098702,0 -71.08999140003498,42.36197720071577,0 -71.08997321786914,42.3620000402024,0 -71.09000555961902,42.36201630540818,0 -71.08992718298565,42.36206749293692,0 -71.08996548629058,42.36208622343708,0 -71.09004340735356,42.36204063377942,0 -71.09006691133743,42.36204472643016,0 -71.09008863785486,42.36204208106695,0 -71.09010860214696,42.3620273076441,0 -71.09011952990262,42.36200847419422,0 -71.09011779480767,42.36198692534899,0 -71.09011420789344,42.36197749432137,0 -71.09013236297208,42.36195734055759,0 -71.09016683685387,42.3619116634764,0 -71.09020835262018,42.36192926568352,0 -71.09025544894715,42.3619105185394,0 -71.0904166165806,42.36194332403968,0 -71.09032761503684,42.36202802279209,0 -71.09049099975626,42.36213124641288,0 -71.09057113402531,42.36205588024205,0 -71.09062034320037,42.36211961235766,0 -71.09069339365467,42.36206831836684,0 -71.0907044311836,42.36212089165396,0 -71.09074278299109,42.36209525092262,0 -71.09079580061926,42.36210734543693,0 -71.09079940545662,42.36205746571552,0 -71.09081403206295,42.36206015403352,0 -71.09081218775968,42.36204261982475,0 -71.0909017593343,42.36205730528393,0 -71.09093276795814,42.36196147682983,0 -71.09095652175486,42.36196145819025,0 -71.0909747908451,42.36195334174056,0 -71.09098757212084,42.36193847708665,0 -71.09098572241689,42.3619222452897,0 -71.09098022377806,42.36191277199006,0 -71.09104779539507,42.36188841092078,0 -71.09104601196822,42.36190600987292,0 -71.09104785943589,42.36192087918771,0 -71.09106065180752,42.36193031566356,0 -71.09109170514864,42.36194107613034,0 -71.09111909926489,42.36193969771462,0 -71.09114283933594,42.36193157978234,0 -71.09116293485181,42.3619207761511,0 -71.09117388927407,42.36190997072823,0 -71.09117569740096,42.36189646130594,0 -71.09114829804285,42.3618802894079,0 -71.09115193814164,42.3618667845702,0 -71.09114459215583,42.3618573109263,0 -71.09113542812543,42.36185054436491,0 -71.09124312919964,42.36180862917495,0 -71.09131077065592,42.3618787848957,0
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Riverside Park Pavilion</name>
+			<styleUrl>#dsgnmps-new</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#dsgnmpsSchema">
+					<SimpleData name="number">26</SimpleData>
+					<SimpleData name="name">Riverside Park Pavilion</SimpleData>
+					<SimpleData name="street">Memorial Dr and Western Ave</SimpleData>
+					<SimpleData name="region">Riverside</SimpleData>
+					<SimpleData name="description">Touloukian Touloukian</SimpleData>
+					<SimpleData name="date">2010</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-71.11550235564708,42.36494290537642,0 -71.11551281990998,42.36475064936683,0 -71.11543116100285,42.36474935674494,0 -71.11541865709395,42.36493478446991,0 -71.11550235564708,42.36494290537642,0
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Sackler Museum</name>
+			<styleUrl>#dsgnmps-new</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#dsgnmpsSchema">
+					<SimpleData name="number">27</SimpleData>
+					<SimpleData name="name">Sackler Museum</SimpleData>
+					<SimpleData name="street">32 Quincy St</SimpleData>
+					<SimpleData name="region">Harvard</SimpleData>
+					<SimpleData name="description">James Stirling, Michael Wilford and Associates</SimpleData>
+					<SimpleData name="date">1985</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-71.11406126309339,42.37487095981694,0 -71.11398650489126,42.37519141096796,0 -71.11380694220465,42.37516723407458,0 -71.11370146440099,42.37526785175997,0 -71.114134523093,42.37532480020134,0 -71.11414743036487,42.37532479116591,0 -71.11416033460731,42.37532131656612,0 -71.11416971801172,42.37531524760681,0 -71.11417675371435,42.3753057160008,0 -71.11426985376833,42.37489683392226,0 -71.11406126309339,42.37487095981694,0
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Simmons Hall</name>
+			<styleUrl>#dsgnmps-new</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#dsgnmpsSchema">
+					<SimpleData name="number">28</SimpleData>
+					<SimpleData name="name">Simmons Hall</SimpleData>
+					<SimpleData name="street">229 Vassar St </SimpleData>
+					<SimpleData name="region">MIT</SimpleData>
+					<SimpleData name="description">Steven Holl Architects</SimpleData>
+					<SimpleData name="date">2002</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-71.1019336548768,42.35673403790277,0 -71.10074908577219,42.35732557491698,0 -71.10085943261885,42.35744790104161,0 -71.10205145095337,42.35686015640385,0 -71.1019336548768,42.35673403790277,0
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>South Boston Maritime Park</name>
+			<styleUrl>#dsgnmps-new</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#dsgnmpsSchema">
+					<SimpleData name="number">29</SimpleData>
+					<SimpleData name="name">South Boston Maritime Park</SimpleData>
+					<SimpleData name="street">D St and Northern Ave</SimpleData>
+					<SimpleData name="region">Seaport District</SimpleData>
+					<SimpleData name="description">Machado and Silvetti Associates</SimpleData>
+					<SimpleData name="date">2004</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-71.03955554412003,42.34891770787053,0 -71.04012145373466,42.3481899854858,0 -71.04003551979379,42.34814841862887,0 -71.03925474484322,42.34879716797438,0 -71.03955554412003,42.34891770787053,0
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>W Hotel and Residences</name>
+			<styleUrl>#dsgnmps-new</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#dsgnmpsSchema">
+					<SimpleData name="number">30</SimpleData>
+					<SimpleData name="name">W Hotel and Residences</SimpleData>
+					<SimpleData name="street">100 Stuart St</SimpleData>
+					<SimpleData name="region">Bay VIllage</SimpleData>
+					<SimpleData name="description">William Rawn and Associates</SimpleData>
+					<SimpleData name="date">2009</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-71.06606618443909,42.35095930353445,0 -71.06602997012085,42.35087952032737,0 -71.06605025576324,42.35077502773888,0 -71.06599423669354,42.3507722356983,0 -71.06598692256327,42.35065011284684,0 -71.06574872850356,42.35066077436761,0 -71.06569956642389,42.35068852768252,0 -71.06562712849743,42.35069147592703,0 -71.06518155082871,42.35062496646584,0 -71.0651672880452,42.35062588353118,0 -71.06515688794116,42.35063061318657,0 -71.06515034578064,42.35064010868925,0 -71.0651301324293,42.35071036568566,0 -71.06524838574667,42.35072715856682,0 -71.06520751352878,42.35091859262059,0 -71.06505367202084,42.35090287508345,0 -71.06504857751715,42.35091319512325,0 -71.06505375664541,42.35092853727306,0 -71.06506023562665,42.3509438797829,0 -71.06506671530178,42.35095730520231,0 -71.06508359825835,42.35096593314499,0 -71.06509649279381,42.35097361299847,0 -71.0651145658488,42.35098033811584,0 -71.06514304976912,42.35098226531291,0 -71.06578088509768,42.35102852779311,0 -71.06579379548148,42.35097753160189,0 -71.06583541742719,42.35097656851958,0 -71.06583155895405,42.35099003846017,0 -71.06598775867347,42.35100350791278,0 -71.06598768496913,42.3509919547375,0 -71.06600067777264,42.35099195050651,0 -71.06599661066502,42.35096597334947,0 -71.06606618443909,42.35095930353445,0
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

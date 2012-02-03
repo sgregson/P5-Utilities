@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>.~lock.DSGN Restaurant_converted.csv#.kml</name>
+	<Schema name="dsgnmps" id="dsgnmpsSchema">
+		<SimpleField name="number" type="int">
+			<displayName>Map Element Number</displayName>
+		</SimpleField>
+		<SimpleField name="name" type="string">
+			<displayName>Element Name</displayName>
+		</SimpleField>
+		<SimpleField name="street" type="string">
+			<displayName>Street Address</displayName>
+		</SimpleField>
+		<SimpleField name="region" type="string">
+			<displayName>Region</displayName>
+		</SimpleField>
+		<SimpleField name="type" type="string">
+			<displayName>Short Description</displayName>
+		</SimpleField>
+		<SimpleField name="date" type="string">
+			<displayName>Date</displayName>
+		</SimpleField>
+	</Schema>
+	<Folder>
+		<name>.~lock.DSGN Restaurant_converted.csv# outlines</name>
+	</Folder>
+</Document>
+</kml>
