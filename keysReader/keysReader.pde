@@ -19,19 +19,19 @@ void draw() {
   
   if(finished) {
     history = append(history, new String(input));
-    println(history);
     input = new char[0];
     finished = false;
   }
 }
 
 void keyPressed() {
-  //ENTER triggers immediate print/purge
-  //BACKSPACE removes last character
-  //Non-coded keys will append to the input array.
+  //ENTER pushes input[] to new line of history
+  //BACKSPACE removes character or line
+  //UNENCODED keys are logged in input[]
   if(key == ENTER || key == RETURN) {finished = true;}
   else if(key == BACKSPACE) {
-    if(input.length > 0) {input = shorten(input);}
+    if(input.length > 0) { input = shorten(input); }
+    else { if(history.length > 0){history = shorten(history);} }
   }
   else if(key != CODED) {
     input = append(input, char(key));
