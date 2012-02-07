@@ -15,7 +15,7 @@ void draw() {
   
   for(int i = 0; i<history.length;i++){text(history[i], 5,height - lH - (history.length * lH) + i*lH);}
   text(new String(input), 5,height-lH);
-  if( sin(millis() / 100) >= 0 ) {line(5,height-10,10,height-10);}
+  if( round(millis() / 500) % 2 == 0 ) {line(5,height-10,10,height-10);}
   
   if(finished) {
     history = append(history, new String(input));
