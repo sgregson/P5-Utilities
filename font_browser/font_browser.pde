@@ -24,20 +24,17 @@ void draw() {
       }
     }
   }
-
+  
   textFont( createFont("Arial", step) );
-
-  text(matchName, 10, step);
-  textAlign(RIGHT);
-  text("...browse fonts", width, step);
+  if(input.length > 0) { text(matchName, 10, step); }
+  else { text("...browse fonts", 10, step); }
+  
   stroke(255);
   line(0,step,width,step);
   noLoop();
 }
 
 void keyPressed() {
-  //BACKSPACE removes last character
-  //Non-coded keys will append to the input array.
   if(key == ENTER || key == RETURN) {}
   else if(key == BACKSPACE) { if(input.length > 0) {input = shorten(input);} }
   else if(key != CODED) { input = append(input, char(key)); }
