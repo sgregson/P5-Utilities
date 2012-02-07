@@ -32,13 +32,9 @@ void keyPressed() {
   if(key == ENTER || key == RETURN) {finished = true;}
   else if(key == BACKSPACE) {
     if(input.length > 0) {input = shorten(input);}
-
-    println(new String(input));
   }
   else if(key != CODED) {
     input = append(input, char(key));
-
-    println(new String(input));
   }
 }
 
