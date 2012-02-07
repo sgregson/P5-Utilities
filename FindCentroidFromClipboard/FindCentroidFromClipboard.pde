@@ -7,33 +7,35 @@
 import java.awt.datatransfer.*;
 import java.awt.Toolkit; 
 
-ClipHelper cp = new ClipHelper();
+ClipHelper clip = new ClipHelper();
 
 void setup() { size(200,800); background(#FABABA); }
 void draw() {}
 
 // Press Any Key to Copy
 void mousePressed() {
-  double xSum = 0;
-  double ySum = 0;
-  String input = cp.pasteString();
+  String input = clip.pasteString();
+  double xSum, ySum;
+  xSum = ySum = 0;
+
+  String[] allPoints = split(input, ' ');
+  int pointCount = allPoints.length;
   
-  String[] nTup = split(input, ' ');
-  if(nTup.length > 2) {
-    for(int i=0;i<nTup.length;i++) {
-      String[] ps = split(nTup[i], ',');
+  if(pointCount > 2) {
+    for(int i=0;i<pointCount;i++) {
+      String[] ps = split(allPoints[i], ',');
       xSum += float(ps[0]);
       ySum += float(ps[1]);
     }
-    xSum = xSum / nTup.length;
-    ySum = ySum / nTup.length;
+    xSum = xSum / pointCount;
+    ySum = ySum / pointCount;
     
-    println(xSum + "," + ySum);
+    println("\n" + xSum + "," + ySum);
     
-    cp.copyString(xSum + "," + ySum);
+    clip.copyString(xSum + "," + ySum);
   } else {
     println("INVALID SOURCE");
-    cp.copyString(" ");
+    clip.copyString("N/A");
   }
 }
 
@@ -43,9 +45,7 @@ void mousePressed() {
 class ClipHelper {
   Clipboard clipboard;
   
-  ClipHelper() {
-    getClipboard();  
-  }
+  ClipHelper() { getClipboard(); }
   
   void getClipboard () {
     // this is our simple thread that grabs the clipboard
