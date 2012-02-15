@@ -1,0 +1,105 @@
+Count,Nationality,Gender,Status,Occupation
+5754,Qatari,Male,Inactive Retired,NA
+14711,Qatari,Male,Inactive Student,NA
+0,Qatari,Male,Inactive Homemaker,NA
+2352,Qatari,Male,Inactive Physically Unable,NA
+1573,Qatari,Male,Inactive Not Seeking,NA
+169,Qatari,Male,Inactive Other,NA
+44,Qatari,Male,Active,Agriculture+ forestry and fishing
+4365,Qatari,Male,Active,Mining and quarrying
+725,Qatari,Male,Active,Manufacturing
+1415,Qatari,Male,Active,Electricity+ gas+ water supply and waste management
+543,Qatari,Male,Active,Construction
+1518,Qatari,Male,Active,Wholesale and retail trade; repair of vehicles
+530,Qatari,Male,Active,Transportation and storage
+34,Qatari,Male,Active,Accommodation and food service activities
+1606,Qatari,Male,Active,Information and communication
+1190,Qatari,Male,Active,Financial and insurance activities
+351,Qatari,Male,Active,Real estate activities
+218,Qatari,Male,Active,Professional+ scientific and technical activities
+316,Qatari,Male,Active,Administrative and support service activities
+29995,Qatari,Male,Active,Public administration and defense; compulsory social security
+1624,Qatari,Male,Active,Education
+1130,Qatari,Male,Active,Human health and social work activities
+636,Qatari,Male,Active,Arts+ entertainment and recreation
+55,Qatari,Male,Active,Activities of households
+47,Qatari,Male,Active,Other service activities
+637,Qatari,Male,Active,Looking for work but never worked before
+2622,Qatari,Female,Inactive Retired,NA
+15327,Qatari,Female,Inactive Student,NA
+26622,Qatari,Female,Inactive Homemaker,NA
+1328,Qatari,Female,Inactive Physically Unable,NA
+1715,Qatari,Female,Inactive Not Seeking,NA
+2,Qatari,Female,Inactive Other,NA
+2,Qatari,Female,Active,Agriculture+ forestry and fishing
+711,Qatari,Female,Active,Mining and quarrying
+58,Qatari,Female,Active,Manufacturing
+248,Qatari,Female,Active,Electricity+ gas+ water supply and waste management
+78,Qatari,Female,Active,Construction
+356,Qatari,Female,Active,Wholesale and retail trade; repair of vehicles
+171,Qatari,Female,Active,Transportation and storage
+10,Qatari,Female,Active,Accommodation and food service activities
+645,Qatari,Female,Active,Information and communication
+1296,Qatari,Female,Active,Financial and insurance activities
+145,Qatari,Female,Active,Real estate activities
+93,Qatari,Female,Active,Professional+ scientific and technical activities
+79,Qatari,Female,Active,Administrative and support service activities
+12060,Qatari,Female,Active,Public administration and defense; compulsory social security
+6653,Qatari,Female,Active,Education
+2284,Qatari,Female,Active,Human health and social work activities
+247,Qatari,Female,Active,Arts+ entertainment and recreation
+5,Qatari,Female,Active,Activities of households
+90,Qatari,Female,Active,Other service activities
+1877,Qatari,Female,Active,Looking for work but never worked before
+0,Expat,Male,Inactive Retired,NA
+19167,Expat,Male,Inactive Student,NA
+0,Expat,Male,Inactive Homemaker,NA
+705,Expat,Male,Inactive Physically Unable,NA
+1051,Expat,Male,Inactive Not Seeking,NA
+1441,Expat,Male,Inactive Other,NA
+17026,Expat,Male,Active,Agriculture+ forestry and fishing
+79163,Expat,Male,Active,Mining and quarrying
+99326,Expat,Male,Active,Manufacturing
+3266,Expat,Male,Active,Electricity+ gas+ water supply and waste management
+503150,Expat,Male,Active,Construction
+135677,Expat,Male,Active,Wholesale and retail trade; repair of vehicles
+29207,Expat,Male,Active,Transportation and storage
+26154,Expat,Male,Active,Accommodation and food service activities
+5809,Expat,Male,Active,Information and communication
+6352,Expat,Male,Active,Financial and insurance activities
+7820,Expat,Male,Active,Real estate activities
+18933,Expat,Male,Active,Professional+ scientific and technical activities
+36436,Expat,Male,Active,Administrative and support service activities
+28500,Expat,Male,Active,Public administration and defense; compulsory social security
+8949,Expat,Male,Active,Education
+7573,Expat,Male,Active,Human health and social work activities
+3897,Expat,Male,Active,Arts+ entertainment and recreation
+1355,Expat,Male,Active,Activities of households
+52505,Expat,Male,Active,Other service activities
+599,Expat,Male,Active,Looking for work but never worked before
+0,Expat,Female,Inactive Retired,NA
+18123,Expat,Female,Inactive Student,NA
+75376,Expat,Female,Inactive Homemaker,NA
+369,Expat,Female,Inactive Physically Unable,NA
+1579,Expat,Female,Inactive Not Seeking,NA
+894,Expat,Female,Inactive Other,NA
+44,Expat,Female,Active,Agriculture+ forestry and fishing
+1496,Expat,Female,Active,Mining and quarrying
+556,Expat,Female,Active,Manufacturing
+67,Expat,Female,Active,Electricity+ gas+ water supply and waste management
+2666,Expat,Female,Active,Construction
+5408,Expat,Female,Active,Wholesale and retail trade; repair of vehicles
+4093,Expat,Female,Active,Transportation and storage
+2809,Expat,Female,Active,Accommodation and food service activities
+1089,Expat,Female,Active,Information and communication
+1578,Expat,Female,Active,Financial and insurance activities
+318,Expat,Female,Active,Real estate activities
+1151,Expat,Female,Active,Professional+ scientific and technical activities
+2373,Expat,Female,Active,Administrative and support service activities
+1665,Expat,Female,Active,Public administration and defense; compulsory social security
+9370,Expat,Female,Active,Education
+8138,Expat,Female,Active,Human health and social work activities
+455,Expat,Female,Active,Arts+ entertainment and recreation
+84169,Expat,Female,Active,Activities of households
+1046,Expat,Female,Active,Other service activities
+1406,Expat,Female,Active,Looking for work but never worked before
